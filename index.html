@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Data Pernikahan</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="p-3 mb-2 bg-success text-dark">
+  <div class="container mt-3">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="text-center text-danger fw-bold">Format Data Undangan</h2>
+    <form id="weddingForm" method="POST">
+      <p class="text-center fw-light">Dimohon untuk memperhatikan penulisan huruf besar dan kecil nya saat 
+        mengisi data undangan yaaa kak, kami hanya meng-copy paste dari formulir ini.</p>
+      <div class="mb-3 mt-5">
+        <label for="cover" class="form-label">Urutan Nama Mempelai</label>
+        <input type="text" class="form-control" id="cover" name="cover" required placeholder="Nama Mempelai yang ingin didahulukan...(wanita atau pria)">
+      </div>
+      <div class="mb-3 mt-5">
+        <label for="cpwName" class="form-label">Nama Panggilan Wanita</label>
+        <input type="text" class="form-control" id="cpwName" name="cpwName" required placeholder="nama panggilan mempelai dan gelar">
+      </div>
+      <div class="mb-3">
+        <label for="cpwNameFull" class="form-label">Nama Lengkap Wanita</label>
+        <input type="text" class="form-control" id="cpwNameFull" name="cpwNameFull" required placeholder="nama lengkap mempelai">
+      </div>
+      <div class="mb-3">
+        <label for="putri" class="form-label">Putri Ke</label>
+        <input type="text" class="form-control" id="putri" name="putri" required placeholder="cth. Putri Ke Dua/Anak ke dua">
+      </div>
+      <div class="mb-3">
+        <label for="cpwFather" class="form-label">Nama Bapak mempelai wanita</label>
+        <input type="text" class="form-control" id="cpwFather" name="cpwFather" required placeholder="nama lengkap dan gelar ayah mempelai Wanita">
+      </div>
+      <div class="mb-3">
+        <label for="cpwMother" class="form-label">Nama Ibu mempelai wanita</label>
+        <input type="text" class="form-control" id="cpwMother" name="cpwMother" required placeholder="nama lengkap dan gelar ibu mempelai Wanita">
+      </div>
+      <div class="mb-3">
+        <label for="cppName" class="form-label">Nama Panggilan Pria</label>
+        <input type="text" class="form-control" id="cppName" name="cppName" required placeholder="nama panggilan mempelai dan gelar">
+      </div>
+      <div class="mb-3">
+        <label for="cppNameFull" class="form-label">Nama Lengkap Pria</label>
+        <input type="text" class="form-control" id="cppNameFull" name="cppNameFull" required placeholder="nama lengkap mempelai dan gelar">
+      </div>
+      <div class="mb-3">
+        <label for="putra" class="form-label">Putra Ke</label>
+        <input type="text" class="form-control" id="putra" name="putra" required placeholder="cth. Putra Ke Dua">
+      </div>
+      <div class="mb-3">
+        <label for="cppFather" class="form-label">Nama Bapak mempelai pria</label>
+        <input type="text" class="form-control" id="cppFather" name="cppFather" required placeholder="nama lengkap dan gelar bapak mempelai Pria">
+      </div>
+      <div class="mb-3">
+        <label for="cppMother" class="form-label">Nama Ibu mempelai pria</label>
+        <input type="text" class="form-control" id="cppMother" name="cppMother" required placeholder="nama lengkap dan gelar ibu mempelai Pria">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Acara Pertama</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="acara1" id="akad" value="Akad Nikah" checked>
+          <label class="form-check-label" for="akadNikah">Akad Nikah</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="acara1" id="pemberkatan" value="Pemberkatan">
+          <label class="form-check-label" for="pemberkatan">Pemberkatan</label>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="waktuAcara1" class="form-label">Hari & Tanggal</label>
+        <input type="text" class="form-control" id="waktuAcara1" name="waktuAcara1" required placeholder="cth.Minggu, 04 April 2024">
+      </div>
+      <div class="mb-3">
+        <label for="jamAcara1" class="form-label">Waktu Acara</label>
+        <input type="text" class="form-control" id="jamAcara1" name="jamAcara1" required placeholder="cth. 07.00 WIB (berikan WIB/WIT/WITA)">
+      </div>
+      <div class="mb-3">
+        <label for="tempatAcara1" class="form-label">Tempat</label>
+        <input type="text" class="form-control" id="tempatAcara1" name="tempatAcara1" required placeholder="cth. kediaman mempelai Pria/wanita atau Gereja St. Petrus">
+      </div>
+      <div class="mb-3">
+        <label for="alamatAcara1" class="form-label">Alamat</label>
+        <input type="text" class="form-control" id="alamatAcara1" name="alamatAcara1" required placeholder="cth. jl. Merpati No. 114 Kelurahan Buaran">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Acara Kedua</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="acara2" id="resepsi" value="Resepsi" checked>
+          <label class="form-check-label" for="resepsi">Resepsi</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="acara2" id="ramahTamah" value="Ramah Tamah">
+          <label class="form-check-label" for="ramahTamah">Ramah Tamah</label>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="waktuAcara2" class="form-label">Hari & Tanggal</label>
+        <input type="text" class="form-control" id="waktuAcara2" name="waktuAcara2" required placeholder="cth. Minggu, 21 April 2024">
+      </div>
+      <div class="mb-3">
+        <label for="jamAcara2" class="form-label">Waktu Acara</label>
+        <input type="text" class="form-control" id="jamAcara2" name="jamAcara2" required placeholder="cth. 11.00 WIB (berikan WIB/WIT/WITA)">
+      </div>
+      <div class="mb-3">
+        <label for="tempatAcara2" class="form-label">Tempat</label>
+        <input type="text" class="form-control" id="tempatAcara2" name="tempatAcara2" required placeholder="Cth. Gedung Kopri">
+      </div>
+      <div class="mb-3">
+        <label for="alamatAcara2" class="form-label">Alamat</label>
+        <input type="text" class="form-control" id="alamatAcara2" name="alamatAcara2" required placeholder="cth. jl. Raya Dr.Cipto No. 14 Kelurahan Bendan">
+      </div>
+      <div class="mb-3">
+        <label for="alamat" class="form-label">Link Maps Alamat Acara</label>
+        <input type="text" class="form-control" id="alamat" name="alamat" required placeholder="copy dan paste link pada maps dihp">
+      </div>
+      <div class="mb-3">
+        <label for="rekening" class="form-label">Rekening Untuk Wedding Gift</label>
+        <textarea class="form-control" id="rekening" name="rekening" required rows="3" placeholder="Cantumkan nama Bank, No.Rekening dan atas nama (Support Dompet digital seperti DANA, dll.)"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="kado" class="form-label">Alamat Untuk Kirim Kado</label>
+        <textarea class="form-control" id="kado" name="kado" required rows="3" placeholder="Cantumkan nama Bank, No.Rekening dan atas nama (Support Dompet digital seperti DANA, dll.)"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="catatan" class="form-label">Love story</label>
+        <textarea class="form-control" id="catatan" name="catatan" required rows="10" placeholder="Pisahkan per Paragraf/Bagian dengan Judul, contoh bagian Perkenalan, Lamaran, Pernikahan"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="musik" class="form-label">Request Music / Backsound</label>
+        <input type="text" class="form-control" id="musik" name="musik" required placeholder="Cantumkan Link youtube atau judul dan nama penyanyi">
+      </div>
+      <div class="mb-3">
+        <label for="nomor" class="form-label">No WhatsApp</label>
+        <input type="text" class="form-control" id="nomor" name="nomor" required placeholder="Cth. 0823xxxxxxxx">
+      </div>
+      <div class="mb-3">
+        <label for="tema" class="form-label">Tema Yang Dipilih</label>
+        <input type="text" class="form-control" id="tema" name="tema" required placeholder="Cth. Silver 03">
+      </div>
+      <div class="mb-3">
+        <label for="agama" class="form-label">Tema Agama</label>
+        <input type="text" class="form-control" id="agama" name="agama" required placeholder="Cth. islam">
+      </div>
+      <div class="d-grid gap-2">
+      <button type="button" class="btn btn-primary" onclick="sendWhatsAppMessage()">Kirim WhatsApp</button>
+    </div>
+    </form>
+  </div>
+<H2 class="text-center text-danger fw-bold">PETUNJUK SEBELUM PENGIRIMAN</H2>
+<ol>
+  <LI>Kirim Foto maks. 12 foto ke whatsapp menggunakan dokumen</LI>
+  <li>jika salah satu formulir tidak ingin di isi maka ketik tanda strip pada formulir( - )</li>
+  <li>Setelah format diisi silahkan klik tombol Kirim ke Whatsapp yang selanjutnya akan diarahkan ke aplikasi Whatsapp seperti sedang meneruskan pesan ( jika ada konfirmasi untuk membuka whatsapp maka klik izinkan ),</li>
+  <li>Pilih Kontak Whastapp kami lalu klik Kirim ( Data akan terkirim seperti chat pada biasanya )</li>
+</ol>
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Your custom JavaScript -->
+  <script src="script.js"></script>
+      </div>
+    </div>
+    
+    
+</div>
+</body>
+</html>
